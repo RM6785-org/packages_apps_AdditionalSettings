@@ -131,6 +131,21 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/sound_title">
+
+        <Preference
+            android:key="dirac"
+            android:icon="@drawable/ic_headphone"
+            android:title="@string/dirac_title"
+            android:summary="@string/dirac_summary">
+            <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.realmeparts"
+                 android:targetClass="com.realmeparts.dirac.DiracActivity"/>
+    </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="misc"
         android:title="@string/misc_title">
 
