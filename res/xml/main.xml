@@ -76,6 +76,7 @@
             android:title="@string/cabc_title" />
 
         <Preference
+            android:enabled="false"
             android:icon="@drawable/ic_info_outline_24dp"
             android:summary="@string/cabc_summary" />
 
@@ -167,6 +168,7 @@
         android:title="Other Information">
 
         <Preference
+            android:enabled="false"
             android:icon="@drawable/other_info_icon"
             android:title="@string/other_info_title"
             android:summary="@string/other_info_summary" />
