@@ -30,9 +30,7 @@
 
     <!-- Required to enable dnd during game mode -->
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
-
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
+    
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -48,20 +46,6 @@
             android:icon="@drawable/ic_headphone"
             android:label="@string/dirac_title"
             android:theme="@style/Theme.SubSettingsBase">
-        </activity>
-
-        <!-- Doze -->
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:exported="true"
-            android:label="@string/ambient_display_gestures_title"
-            android:theme="@style/Theme.SubSettingsBase">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
         </activity>
 
         <!-- Device Settings -->
@@ -180,10 +164,4 @@
         <service
             android:name="com.realmeparts.SmartChargingService"
             android:exported="false"></service>
-
-        <!-- Doze -->   
-        <service
-            android:name="com.realmeparts.doze.DozeService"
-            android:exported="false"></service>
-    </application>
 </manifest>

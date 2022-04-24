@@ -6,4 +6,5 @@ PRODUCT_PACKAGES += \
 # Parts
 PRODUCT_PACKAGES += \
     RealmeDirac \
-    RealmeParts
+    RealmeParts \
+    OplusDoze
